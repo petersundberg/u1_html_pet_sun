@@ -1,0 +1,408 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin:0;
+}
+
+#presentationText{
+    padding: 0;
+    margin: 0;
+}
+
+#infoText h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+.myContainer{
+    width:90%;
+    margin:auto;
+    overflow: hidden;
+}
+.extraContainer{
+    width: 90%;
+    margin-left: 250px;
+    overflow: hidden;
+}
+
+#myFixed{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#mainHeader{
+    width: 100%;
+    height: auto;
+    background-color: coral;
+    color:#fff;
+}
+
+#mainHeader h1{
+    font-size: 30px;
+    color:#fff;
+}
+
+#navigate{
+    background-color: #efefef;
+    color:#fff;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+#navigate .myContainer{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid grey;
+    line-height: 10px;
+}
+#navigate li{
+    padding: 5px;
+    margin: 0px;
+}
+#navigate a {
+    color: blue;
+    text-decoration: none;
+}
+#navigate a:hover {
+    padding: 10px 0px;
+    color: white;
+    background-color: coral;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.myContainer iframe:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    #navigate a {
+      display: block;
+      text-align: left;
+      margin-left: 30px;
+    }
+  }
+
+ul{
+    padding: 0px;
+}
+
+.block{
+    float: left;
+}
+
+.imgSize1{
+    width: 50%;
+    height: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.imgSize2{
+    width: 100%;
+    height: auto;
+    min-width: 75%;
+    min-height: 75%;
+}
+.clr{
+    clear: both;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    padding: 0px;
+}
+
+
+#navigate li{
+    display: inline;
+}
+
+
+#videoText{
+    font-size: 14px;
+}
+
+/*visa karta*/
+.googleMap{
+    position: relative;
+    padding: 10px;
+    right: 50px;
+    float: right;
+}
+
+#footerInfo{
+    width: 100%;
+    background: #555;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+#footerInfo p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+}
+
+.adress{
+    display: inline;
+}
+
+/*visa länkar sida vid sida*/
+.footerLinks{
+    display: inline;
+}
+
+
+#source p{
+    margin-top: 120px;
+}
+
+#source{
+    color: #fff;
+    padding: 0px;
+    
+}
+
+/*döljer "Källa: Wikipedia" på övriga sidor*/
+.hidden {
+    visibility: hidden;
+  }
+
+.zoomSocialMedia:hover {
+    transform: scale(1.5); /* (150%) */
+    z-index: 2;
+}
+.zoomImg1:hover {
+    transform: scale(1.5); /* (150% zoom) */
+    z-index: 2;
+}
+
+
+
+/*
+Kontakt-sida: --------------------------------------------------------
+*/
+
+/* .contactInfo{
+    display: flex;
+    justify-content: space-between;
+  } */
+  .myForm{
+    display: inline-block;
+  }
+  .contactImg1{
+    display: inline-block;
+    /* margin-bottom: 20px; */
+    /* vertical-align:top; */
+  }
+
+.myForm{
+    padding-top:10px;
+  }
+  .myForm{
+    padding-left: 0px;
+}
+  .myForm label{
+    display:block;
+  }
+  .myForm input[type="text"],input[type="email"]{
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding:8px;
+  }
+  .myForm textarea{
+    width: 200px;
+    min-width: 200px;
+    max-width: 350px;   
+    height: 80px;
+    min-height: 60px;
+    max-height: 120px;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding:8px;
+    resize: both;
+  }
+
+  
+.contactImg1{
+    /* justify-content: right;
+    top: 0px;
+    right: 50px;*/
+    width: 30%;
+    height: auto;
+    min-width: 20%;
+    min-height: 20%;
+    float: right;
+    flex-wrap: wrap;
+}
+
+.contactImg2{
+    /* justify-content: right;
+    top: 0px;
+    right: 50px;*/
+    width: 30%;
+    height: auto;
+    min-width: 20%;
+    min-height: 20%;
+    float: right;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactInfo {
+      display: block;
+      margin-left: 10px;
+    }
+  }
+
+  #footerInfo{
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+@media only screen and (max-width: 900px) {
+    #footerInfo {
+      height: 500px;
+      display: block;
+      text-align: center;
+    }
+  }
+    @media only screen and (max-width: 900px) {
+    .googleMap {
+        width: 50%;
+        right: 0;
+        min-width: 300px;
+        float: none;
+        margin: auto;
+        max-width: 400px;
+    }
+  } 
+
+
+  /*
+Galleri-sida: --------------------------------------------------------
+*/
+
+.galleryText{
+    margin-left: 22vw;
+}
+.galleryImages h3{
+    margin-left: 22vw;
+}
+.container{
+    text-align: center;
+    margin-left: 22vw;
+}
+.container p{
+    font-size: 14px;
+}
+
+.container .col-sm-3{
+    border: 2px solid coral;
+}
+.row{
+    width: 900px;
+}
+
+.container .row{
+    height: auto;
+}
+
+.container img {
+    margin-top: 10px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-radius: 10px;
+}
+
+.fit-image{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    }
+
+.zoom:hover {
+    transform: scale(1.3); /* (130% zoom) */
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+  /*Extra-sida*/
+
+.extraInfo{
+    width: 100%;
+    height: auto;
+}
+.extraInfo img:hover{
+    border: 1px solid coral;
+    transform: scale(1.1);
+}
+.extraInfo iframe:hover{
+    border: 1px solid coral;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+.extraContainer {
+    display: inline-block;
+    margin-left: 10vw;
+    }
+}
+
+
+  /*justera bilder (länkar)*/
+  @media only screen and (max-width: 768px) {
+.extraContainer img {
+    display: block;
+    margin-left: 10px;
+    width: 50%;
+    }
+}
+/*justera videor (iframe)*/
+@media only screen and (max-width: 768px) {
+.extraContainer iframe {
+    display: block;
+    margin-left: 10px;
+    width: 50%;
+    }
+}
+/*justera video (iframe) på index-sida*/
+@media only screen and (max-width: 768px) {
+.myContainer iframe {
+    display: block;
+    margin-left: 10px;
+    width: 50%;
+    }
+}
+  /*justera galleri-bilder*/
+  @media only screen and (max-width: 768px) {
+    .row {
+        display: block;
+        margin-left: 10px;
+        width: 50%;
+        }
+    }
